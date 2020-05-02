@@ -188,6 +188,7 @@ body {
 ## Resultado
 
 * El resultado final sería algo así:
+
 ![Resultado](https://github.com/ULL-ESIT-DSI-1920/dsi-p4-pokedex-alu0100944723/blob/master/src/assets/Capturas_Readme/Resultado.gif)
 
 * También puede verse en la siguiente [url](https://ull-esit-dsi-1920.github.io/dsi-p4-pokedex-alu0100944723/)
