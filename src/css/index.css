@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(8, 140px);
+    grid-template-rows: repeat(20, 140px);
+    grid-gap: 10px 10px;
+}
+
+.elemento {
+    background-color: red;
+}
+
+.round {
+    border-radius: 5%;
+}
+
+.shadow {
+    box-shadow: 5px 5px 10px 4px darkred;
+}

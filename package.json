@@ -1,0 +1,50 @@
+{
+    "name": "dsi-p4-pokedex",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "clean": "rm -rf dist package-lock.json node_modules",
+        "start": "parcel src/index.html --port 8080",
+        "build": "parcel build src/index.html -d build --public-url /dsi-p4-pokedex-alu0100944723/",
+        "deploy": "npx gh-pages -d build",
+        "prettier": "npx prettier --write src/",
+        "eslint": "npx eslint src/",
+        "eslintfix": "npx eslint src/ --fix",
+        "csslint": "npx stylelint src/css/*.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ULL-ESIT-DSI-1920/dsi-p4-pokedex-alu0100944723.git"
+    },
+    "author": "Carolina Álvarez Martín - alu0100944723",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ULL-ESIT-DSI-1920/dsi-p4-pokedex-alu0100944723/issues"
+    },
+    "homepage": "https://github.com/ULL-ESIT-DSI-1920/dsi-p4-pokedex-alu0100944723#readme",
+    "devDependencies": {
+        "@fullhuman/postcss-purgecss": "^2.1.2",
+        "autoprefixer": "^9.7.6",
+        "cssnano": "^4.1.10",
+        "eslint": "^6.8.0",
+        "eslint-config-prettier": "^6.10.1",
+        "eslint-config-standard": "^14.1.1",
+        "eslint-plugin-import": "^2.20.2",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prettier": "^3.1.2",
+        "eslint-plugin-promise": "^4.2.1",
+        "eslint-plugin-standard": "^4.0.1",
+        "gh-pages": "^2.2.0",
+        "postcss-clean": "^1.1.0",
+        "postcss-font-magician": "^2.3.1",
+        "postcss-mixins": "^6.2.3",
+        "postcss-nesting": "^7.0.1",
+        "postcss-preset-env": "^6.7.0",
+        "stylelint": "^13.3.3",
+        "stylelint-config-standard": "^20.0.0"
+    },
+    "dependencies": {
+        "prettier": "^2.0.2"
+    }
+}
