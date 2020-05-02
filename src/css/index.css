@@ -6,12 +6,8 @@ body {
 .container {
     display: grid;
     grid-template-columns: repeat(8, 140px);
-    grid-template-rows: repeat(20, 140px);
+    grid-template-rows: repeat(18, 140px);
     grid-gap: 10px 10px;
-}
-
-.elemento {
-    background-color: red;
 }
 
 .round {
@@ -19,5 +15,37 @@ body {
 }
 
 .shadow {
-    box-shadow: 5px 5px 10px 4px darkred;
+    box-shadow: 5px 5px 10px 4px gray;
+}
+
+.elemento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(180deg, white 30%, gray);
+    & p {
+        text-transform: capitalize;
+        font-family: pokemon;
+        font-size: 20px;
+    }
+    &:hover {
+        & img {
+            animation: agrandar 3s 1;
+        }
+    }
+}
+
+@font-face {
+    font-family: pokemon;
+    src: url(../assets/Pokemon.ttf);
+}
+
+@keyframes agrandar {
+    0% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(2, 2);
+    }
 }
