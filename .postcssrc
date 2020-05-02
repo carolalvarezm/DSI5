@@ -1,6 +1,14 @@
 {
 "plugins": {
-
+"postcss-mixins": true,
+"postcss-font-magician": true,
+"postcss-nesting": true,
+"@fullhuman/postcss-purgecss": {
+"content": [
+"./src/**/*.html",
+"./src/**/*.js"
+]
+},
 "autoprefixer": true,
 "postcss-clean": true
 }
