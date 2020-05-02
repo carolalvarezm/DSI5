@@ -31,7 +31,7 @@ body {
     }
     &:hover {
         & img {
-            animation: agrandar 3s 1;
+            animation: agrandar 3s;
         }
     }
 }
