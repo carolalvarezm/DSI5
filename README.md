@@ -140,11 +140,12 @@ body {
 }
 ```
 ### Elemento
+* Para esta parte usamos el plugin de postcss *postcss-nesting*. Es mucho más sencillo para trabajar con el css y el nivel de especifidad que queremos.
 * Una vez que le hemos dado el formato de tarjetas lo primero que hacemos es centrar los elementos hijos con flex. 
 * Añadimos también un gradiente de blanco a gris para el fondo.
 * A los párrafos hijos transformamos la primera letra a mayúsculas y le añadimos una fuente desde los assets.
-* Finalmente cuando el cursor pase por encima la imagen hija se hará más grande.
-
+* Finalmente cuando el cursor pase por encima la imagen hija se hará más grande. Para esto usamos la propiedad 
+*animation* que nos hará la animación que definimos en el siguiente apartado.
 ```css
 
 @font-face {
